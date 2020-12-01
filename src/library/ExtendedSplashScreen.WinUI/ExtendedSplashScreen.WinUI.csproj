@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
+		<TargetPlatformMinVersion>10.0.17134.0</TargetPlatformMinVersion>
+		<GenerateLibraryLayout>true</GenerateLibraryLayout>
+		<Authors>nventive</Authors>
+		<Company>nventive</Company>
+		<RootNamespace>Nventive.ExtendedSplashScreen</RootNamespace>
+		<RootNamespace>Nventive.ExtendedSplashScreen</RootNamespace>
+		<AssemblyName>Nventive.ExtendedSplashScreen.WinUI</AssemblyName>
+		<Description>Nventive.ExtendedSplashScreen for WinUI</Description>
+		<PackageId>Nventive.ExtendedSplashScreen.WinUI</PackageId>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<DefineConstants>HAS_WINUI</DefineConstants>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Microsoft.WinUI" Version="3.0.0-preview3.201113.0" />
+		<PackageReference Include="Uno.Core" Version="2.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="..\ExtendedSplashScreen.Uno\IExtendedSplashScreen.cs" />
+		<Compile Include="..\ExtendedSplashScreen.Uno\Implementations\ExtendedSplashScreen.cs" Link="Implementations\ExtendedSplashScreen.cs" />
+		<Compile Include="..\ExtendedSplashScreen.Uno\Implementations\ExtendedSplashScreen.Windows.cs" Link="Implementations\ExtendedSplashScreen.Windows.cs" />
+	</ItemGroup>
+</Project>
