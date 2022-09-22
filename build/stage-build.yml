@@ -1,23 +1,14 @@
 ﻿steps:
-## Install .netcore runtime required by GitVersion@5
-- task: UseDotNet@2
+- task: GitVersion/setup@0
   inputs:
-    packageType: 'runtime'
-    version: '2.1.0'
-    installationPath: '$(Agent.ToolsDirectory)/dotnet'
+    versionSpec: '5.10.1'
+  displayName: 'Install GitVersion'
 
-- task: GitVersion@5
+- task: GitVersion/execute@0
   inputs:
-    runtime: 'core'
     useConfigFile: true
-    configFilePath: build/gitversion.yml
+    configFilePath: $(Build.SourcesDirectory)/build/gitversion.yml
   displayName: 'Calculate version'
-
-- task: NuGetToolInstaller@1
-  displayName: 'Install NuGet $(NUGET_VERSION)'
-  inputs:
-    versionSpec: $(NUGET_VERSION)
-    checkLatest: false
 
 - task: VisualStudioTestPlatformInstaller@1
   condition: and(succeeded(), eq(variables['ApplicationPlatform'], 'NuGet'))
@@ -31,7 +22,7 @@
   inputs:
     command: 'custom'
     custom: 'workload'
-    arguments: 'install android'
+    arguments: 'install android ios macos maccatalyst'
 
 - task: MSBuild@1
   displayName: 'Restore solution packages'
