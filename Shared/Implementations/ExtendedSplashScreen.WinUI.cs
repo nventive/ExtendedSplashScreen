@@ -68,7 +68,9 @@ namespace Nventive.ExtendedSplashScreen
 				}
 			}
 
+#if !__IOS__ && !__MACCATALYST__
 			Window.Current.SizeChanged += (s, e) => PositionImage();
+#endif
 
 			PositionImage();
 

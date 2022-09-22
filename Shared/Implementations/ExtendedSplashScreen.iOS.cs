@@ -1,4 +1,4 @@
-﻿#if __IOS__
+﻿#if !WINUI && __IOS__
 using Foundation;
 using Microsoft.Extensions.Logging;
 using System;

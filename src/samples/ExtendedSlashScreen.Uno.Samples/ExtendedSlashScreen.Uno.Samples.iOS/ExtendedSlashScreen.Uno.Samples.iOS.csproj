@@ -163,4 +163,5 @@
   </ItemGroup>
   <Import Project="..\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems" Label="Shared" Condition="Exists('..\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+	<Import Project="..\..\..\..\Shared\Shared.projitems" Label="Shared" />
 </Project>

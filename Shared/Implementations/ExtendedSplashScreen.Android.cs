@@ -1,4 +1,4 @@
-﻿#if __ANDROID__
+﻿#if !WINUI && __ANDROID__
 using Android.App;
 using Microsoft.Extensions.Logging;
 using System;

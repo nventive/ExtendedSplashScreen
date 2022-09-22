@@ -1,11 +1,16 @@
-﻿#if NETFX_CORE || __ANDROID__ || __IOS__ || __WASM__
+﻿#if WINUI || NETFX_CORE || __ANDROID__ || __IOS__ || __WASM__
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Activation;
+#if WINUI
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+#else
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+#endif
 
 namespace Nventive.ExtendedSplashScreen
 {

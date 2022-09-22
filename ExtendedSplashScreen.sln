@@ -596,8 +596,10 @@ Global
 		SolutionGuid = {D781FBA8-9995-40C9-BF8A-7F7BDDB1A06B}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\Shared.projitems*{1232d032-21d8-4302-9173-8aab5acf2130}*SharedItemsImports = 4
 		src\samples\ExtendedSlashScreen.Uno.Samples\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems*{1232d032-21d8-4302-9173-8aab5acf2130}*SharedItemsImports = 4
 		Shared\Shared.projitems*{2bb5bc32-58ca-455f-860b-5e89dd8d6f9a}*SharedItemsImports = 5
+		Shared\Shared.projitems*{3b5748da-9f96-47c9-9216-7b274f764b73}*SharedItemsImports = 4
 		src\samples\ExtendedSlashScreen.Uno.Samples\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems*{3b5748da-9f96-47c9-9216-7b274f764b73}*SharedItemsImports = 4
 		src\samples\ExtendedSlashScreen.Uno.Samples\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems*{517bf627-6b4c-4488-b044-9fb92f2de8a7}*SharedItemsImports = 4
 		src\samples\ExtendedSlashScreen.Uno.Samples\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
