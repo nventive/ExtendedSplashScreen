@@ -16,7 +16,7 @@ using Windows.ApplicationModel.Activation;
 using Windows.Graphics.Display;
 using Windows.UI;
 
-namespace Nventive.ExtendedSplashScreen.WinUI
+namespace Nventive.ExtendedSplashScreen
 {
 	public partial class ExtendedSplashScreen
 	{

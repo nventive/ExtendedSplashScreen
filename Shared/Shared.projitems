@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>ddf377dd-2675-41a8-a1a5-d8702a2382b5</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)IExtendedSplashScreen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Implementations\ExtendedSplashScreen.Android.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Implementations\ExtendedSplashScreen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Implementations\ExtendedSplashScreen.iOS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Implementations\ExtendedSplashScreen.Wasm.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Implementations\ExtendedSplashScreen.Windows.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Implementations\ExtendedSplashScreen.WinUI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Implementations\NullExtendedSplashScreen.cs" />
+  </ItemGroup>
+</Project>

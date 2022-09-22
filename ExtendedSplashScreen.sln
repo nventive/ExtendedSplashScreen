@@ -17,7 +17,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedSlashScreen.Uno.Sam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedSlashScreen.Uno.Samples.UWP", "src\samples\ExtendedSlashScreen.Uno.Samples\ExtendedSlashScreen.Uno.Samples.UWP\ExtendedSlashScreen.Uno.Samples.UWP.csproj", "{517BF627-6B4C-4488-B044-9FB92F2DE8A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedSplashScreen.Uno.WinUI", "src\library\ExtendedSplashScreen.Uno.WinUI\ExtendedSplashScreen.Uno.WinUI.csproj", "{2BB5BC32-58CA-455F-860B-5E89DD8D6F9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtendedSplashScreen.Uno.WinUI", "src\library\ExtendedSplashScreen.Uno.WinUI\ExtendedSplashScreen.Uno.WinUI.csproj", "{2BB5BC32-58CA-455F-860B-5E89DD8D6F9A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Shared", "Shared\Shared.shproj", "{DDF377DD-2675-41A8-A1A5-D8702A2382B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -588,14 +590,18 @@ Global
 		{3B5748DA-9F96-47C9-9216-7B274F764B73} = {5389978F-E394-429B-8543-DE8552377D68}
 		{517BF627-6B4C-4488-B044-9FB92F2DE8A7} = {5389978F-E394-429B-8543-DE8552377D68}
 		{2BB5BC32-58CA-455F-860B-5E89DD8D6F9A} = {AC10D53F-228B-469D-93FE-5D027BBBA474}
+		{DDF377DD-2675-41A8-A1A5-D8702A2382B5} = {AC10D53F-228B-469D-93FE-5D027BBBA474}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D781FBA8-9995-40C9-BF8A-7F7BDDB1A06B}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		src\samples\ExtendedSlashScreen.Uno.Samples\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems*{1232d032-21d8-4302-9173-8aab5acf2130}*SharedItemsImports = 4
+		Shared\Shared.projitems*{2bb5bc32-58ca-455f-860b-5e89dd8d6f9a}*SharedItemsImports = 5
 		src\samples\ExtendedSlashScreen.Uno.Samples\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems*{3b5748da-9f96-47c9-9216-7b274f764b73}*SharedItemsImports = 4
 		src\samples\ExtendedSlashScreen.Uno.Samples\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems*{517bf627-6b4c-4488-b044-9fb92f2de8a7}*SharedItemsImports = 4
 		src\samples\ExtendedSlashScreen.Uno.Samples\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		Shared\Shared.projitems*{c1eb34f1-fb57-4e55-a07c-54362cec743f}*SharedItemsImports = 5
+		Shared\Shared.projitems*{ddf377dd-2675-41a8-a1a5-d8702a2382b5}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
