@@ -56,7 +56,7 @@ namespace ExtendedSlashScreen.Uno.Samples
 			var window = new Window();
 			window.Activate();
 #else
-			var window = Window.Current;
+			var window = Windows.UI.Xaml.Window.Current;
 #endif
 
 			Shell rootFrame = window.Content as Shell;
