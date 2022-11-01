@@ -55,29 +55,18 @@ namespace ExtendedSlashScreen.Uno.Samples
 #if NET5_0_OR_GREATER && WINDOWS
 			var window = new Window();
 			window.Activate();
-#elif WINUI
-			var window = Microsoft.UI.Xaml.Window.Current;
 #else
-			var window = Windows.UI.Xaml.Window.Current;
+			var window = Window.Current;
 #endif
 
-			Frame rootFrame = window.Content as Frame;
+			Shell rootFrame = window.Content as Shell;
 
 			// Do not repeat app initialization when the Window already has content,
 			// just ensure that the window is active
 			if (rootFrame == null)
 			{
 				// Create a Frame to act as the navigation context and navigate to the first page
-				rootFrame = new Frame();
-
-				rootFrame.NavigationFailed += OnNavigationFailed;
-
-#if !WINUI
-				if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
-				{
-					//TODO: Load state from previously suspended application
-				}
-#endif
+				rootFrame = new Shell(e);
 
 				// Place the frame in the current Window
 				window.Content = rootFrame;
@@ -87,26 +76,9 @@ namespace ExtendedSlashScreen.Uno.Samples
 			if (e.PrelaunchActivated == false)
 #endif
 			{
-				if (rootFrame.Content == null)
-				{
-					// When the navigation stack isn't restored navigate to the first page,
-					// configuring the new page by passing required information as a navigation
-					// parameter
-					rootFrame.Navigate(typeof(MainPage), e.Arguments);
-				}
 				// Ensure the current window is active
 				window.Activate();
 			}
-		}
-
-		/// <summary>
-		/// Invoked when Navigation to a certain page fails
-		/// </summary>
-		/// <param name="sender">The Frame which failed navigation</param>
-		/// <param name="e">Details about the navigation failure</param>
-		void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
-		{
-			throw new Exception($"Failed to load {e.SourcePageType.FullName}: {e.Exception}");
 		}
 
 		/// <summary>

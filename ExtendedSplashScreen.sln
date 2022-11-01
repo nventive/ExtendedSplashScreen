@@ -745,6 +745,7 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		src\samples\ExtendedSlashScreen.Uno.Samples\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems*{1232d032-21d8-4302-9173-8aab5acf2130}*SharedItemsImports = 4
 		src\samples\ExtendedSlashScreen.Uno.Samples\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems*{3b5748da-9f96-47c9-9216-7b274f764b73}*SharedItemsImports = 4
+		src\samples\ExtendedSlashScreen.Uno.Samples\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems*{517bf627-6b4c-4488-b044-9fb92f2de8a7}*SharedItemsImports = 4
 		src\samples\ExtendedSlashScreen.Uno.Samples\ExtendedSlashScreen.Uno.Samples.Shared\ExtendedSlashScreen.Uno.Samples.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
 		src\library\Shared\Shared.projitems*{c1eb34f1-fb57-4e55-a07c-54362cec743f}*SharedItemsImports = 5
 		src\library\Shared\Shared.projitems*{d0608425-2826-4d11-a4b6-d8deefae0ac7}*SharedItemsImports = 5

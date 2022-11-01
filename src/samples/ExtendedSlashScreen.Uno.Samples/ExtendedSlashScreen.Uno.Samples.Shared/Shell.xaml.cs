@@ -24,7 +24,11 @@ namespace ExtendedSlashScreen.Uno.Samples
 
 #if WINDOWS_UWP
 			AppExtendedSplashScreen.SplashScreen = e?.SplashScreen;
+#elif WINDOWS
+			AppExtendedSplashScreen.SplashScreen = e?.UWPLaunchActivatedEventArgs.SplashScreen;
 #endif
+
+			NavigationFrame.Navigate(typeof(MainPage), e.Arguments);
 		}
 
 		public IExtendedSplashScreen ExtendedSplashScreen => this.AppExtendedSplashScreen;
