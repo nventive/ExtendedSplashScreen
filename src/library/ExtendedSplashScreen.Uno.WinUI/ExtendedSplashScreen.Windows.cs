@@ -1,4 +1,4 @@
-﻿#if WINDOWS || NET472_OR_GREATER
+﻿#if WINDOWS
 using Windows.ApplicationModel.Activation;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
