@@ -15,7 +15,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Implementations\ExtendedSplashScreen.iOS.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Implementations\ExtendedSplashScreen.macOS.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Implementations\ExtendedSplashScreen.Wasm.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Implementations\ExtendedSplashScreen.Windows.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Implementations\NullExtendedSplashScreen.cs" />
   </ItemGroup>
 </Project>
