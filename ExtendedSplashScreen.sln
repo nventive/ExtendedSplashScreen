@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32901.215
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "library", "library", "{AC10D53F-228B-469D-93FE-5D027BBBA474}"
 EndProject
@@ -275,6 +275,8 @@ Global
 		{F8BEE443-3830-4628-820C-A54634AB9DB5}.Release|Android.Build.0 = Release|x64
 		{F8BEE443-3830-4628-820C-A54634AB9DB5}.Release|Android.Deploy.0 = Release|x64
 		{F8BEE443-3830-4628-820C-A54634AB9DB5}.Release|Any CPU.ActiveCfg = Release|x64
+		{F8BEE443-3830-4628-820C-A54634AB9DB5}.Release|Any CPU.Build.0 = Release|x64
+		{F8BEE443-3830-4628-820C-A54634AB9DB5}.Release|Any CPU.Deploy.0 = Release|x64
 		{F8BEE443-3830-4628-820C-A54634AB9DB5}.Release|ARM.ActiveCfg = Release|x64
 		{F8BEE443-3830-4628-820C-A54634AB9DB5}.Release|ARM.Build.0 = Release|x64
 		{F8BEE443-3830-4628-820C-A54634AB9DB5}.Release|ARM.Deploy.0 = Release|x64
